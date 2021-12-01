@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.todo-main-container {
+  background: #8383ff
+    url("https://images.pexels.com/photos/2629233/pexels-photo-2629233.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920")
+    no-repeat center center/cover;
+  background-blend-mode: multiply;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 89vh;
+  padding: 1.5rem;
+}
+
+.todo-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(#8383ff, 0.35);
+  /* padding: 1.5rem; */
+  /* border: 1px solid #fff; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  /* background: #8383ff; */
+  box-shadow: 0px 0px 5px white;
+  border-radius: 0.5rem;
+}
+
+.todo-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  /* background-color: rgba(#fff, 0.3);
+  border-radius: 0.5rem; */
+  user-select: none;
+  color: white;
+  background-color: rgba(#8383ff, 5%);
+  box-shadow: 0px 0px 2px white;
+  border-radius: 0.5rem;
+}
+
+.todo-input {
+  max-width: 480px;
+  display: block;
+  margin: 0 auto 2rem;
+  font: inherit;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: 5px solid #8383ff;
+}
+
+.todo-input:focus,
+hover {
+  outline: none;
+  border: 5px solid #8383ff;
+}
+
+.error {
+  padding: 0.8rem;
+  display: block;
+  color: red;
+  margin: -2rem 0 1rem;
+  text-align: center;
+  user-select: none;
+}
+
+.todo-items {
+  list-style: none;
+  padding: 0;
+  user-select: none;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: rgba(#8383ff, 0.3);
+  box-shadow: 0px 0px 2px white;
+  border-radius: 0.3rem;
+}
+.lists:hover {
+  box-shadow: 0px 0px 3px white;
+  background-color: rgba(#8383ff, 0.35);
+}
+
+.todo-name {
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding-right: 1rem;
+  max-width: calc(100% - 42px);
+  width: 100%;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.todo-name:focus {
+  outline: none;
+}
+
+.todo-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.8rem;
+  background-color: rgba(#8383ff, 0.4);
+  box-shadow: 0px 0px 2px white;
+}
+
+.todo-icon:hover {
+  background-color: #ec5860;
+  /* background-color: rgba(#8383ff, 0.6); */
+  box-shadow: 0px 0px 5px white;
+}
+
+.lists:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.todo-edit:hover {
+  background-color: rgb(70, 175, 70);
+}
